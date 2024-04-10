@@ -17,7 +17,7 @@ import sys
 import traceback
 
 class TqdmLoggingHandler(logging.StreamHandler):
-    def __init__(self, tqdm_class=tqdm.std.tqdm):
+    def __init__(self, tqdm_class=tqdm.tqdm):
         super(TqdmLoggingHandler, self).__init__()
         self.tqdm_class = tqdm_class
 
